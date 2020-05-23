@@ -16,6 +16,10 @@ thumbnail: /assets/extraction-attraction.jpg
 
 <iframe width="100%" height="315" src="https://www.youtube.com/embed/L6P3nI6VnlY" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
+**Watch Here**: 
+
+<iframe width="100%" height="315" src="https://www.youtube-nocookie.com/embed/u2sa-RKJSzg" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
 **Download link**: [Click here](http://srv5.cinehub24.com/04/245310-137169-EXTRACTION-(2020)-1080p-NF-WEB-DL--Multi-Org-(DD+5.1---192Kbps)---1.7GB---ESub.mkv)
 
 or **from here**: [WeTransfer](https://we.tl/t-p8Rus1bvV8)
