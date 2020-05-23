@@ -6,6 +6,8 @@ title: 'Hello Ahmed, Partho'
 metaDescription: 'This is the site where you can download or watch free movies/Clips. '
 thumbnail: /assets/755729.jpg
 ---
+This is the site where you can download or watch free movies/Clips. 
+
 You can add your own movies/clips by logging to the site. To login, you need to type: 
 
 <https://apz.netlify.app/admin>
