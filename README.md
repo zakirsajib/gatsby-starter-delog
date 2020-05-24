@@ -1,33 +1,30 @@
-[![Netlify Status](https://api.netlify.com/api/v1/badges/8ec719ad-c2f8-4529-b97d-e7561a9eaf33/deploy-status)](https://app.netlify.com/sites/delog-w3layouts/deploys) &nbsp;<a href="https://twitter.com/intent/follow?screen_name=w3layouts">
-  <img src="https://img.shields.io/twitter/follow/w3layouts.svg?label=Follow%20@w3layouts" alt="Follow @w3layouts" />
-</a>
+[![Netlify Status](https://api.netlify.com/api/v1/badges/4a01b4d8-c36b-4fdf-a941-49a86b508e5b/deploy-status)](https://app.netlify.com/sites/apz/deploys)
 
-# Delog - Blog for Developer and Designer
-This simple website built with GatsbyJS and Netlify CMS. Deploys on netlify with single click. This Starter is sponsered by [W3Layouts](https://w3layouts.com).
+# APZ - Ahmed | Partho | Zakir ( Our own Netflix site :) )
+This simple website built with GatsbyJS and Netlify CMS. Deploys on netlify with single click. 
 
-[![Delog - Gatsby Starter Demo](https://w3layouts.com/wp-content/uploads/2020/03/delog.jpg)](https://delog-w3layouts.netlify.com/)
+[![APZ - Ahmed | Partho | Zakir](https://github.com/zakirsajib/gatsby-starter-delog/blob/master/assets/apz.jpg)](https://apz.netlify.app/)
 
-[![Deploy to Netlify](https://www.netlify.com/img/deploy/button.svg)](https://app.netlify.com/start/deploy?repository=https://github.com/W3Layouts/gatsby-starter-delog)
+
+[![Deploy to Netlify](https://www.netlify.com/img/deploy/button.svg)](https://app.netlify.com/start/deploy?repository=https://github.com/zakirsajib/gatsby-starter-delog)
 
 Install this starter locally: (assuming you already have [NodeJS and GatsbyJS installed](https://www.gatsbyjs.org/tutorial/part-zero/))
 ```bash
-gatsby new gatsby-starter-delog https://github.com/W3Layouts/gatsby-starter-delog
+gatsby new gatsby-starter-delog https://github.com/zakirsajib/gatsby-starter-delog
 ```
 
-Instructions also available at W3Layouts [Delog Launch Article](https://w3layouts.com/articles/delog-gatsby-starter-netlify-cms/).
 
 ## Features
 - Built with GatsbyJS and Netlify CMS
 - Option to Add, Edit, Update and Delete posts via Netlify CMS
-- SEO friendly - Option to Add meta description
-- In-built contact form powered by [W3Layouts](https://w3layouts.com) 
+- SEO friendly - Option to Add meta description 
 - Comes with dark mode
 
 ---
 
 ## Documentation
 
-* Once you hit "[Deploy to Netlify](https://app.netlify.com/start/deploy?repository=https://github.com/W3Layouts/gatsby-starter-delog)"
+* Once you hit "[Deploy to Netlify](https://app.netlify.com/start/deploy?repository=https://github.com/zakirsajib/gatsby-starter-delog)"
 * Connect Github
 * Enter Repository Name
 * And your site starts build process. After the build process your website is live
@@ -59,21 +56,14 @@ Inside you Netlify CMS admin, `Settings > Config` or you can go to `site-meta-da
 * Site URL
 * Homepage Title
 * Homepage Description
-* To get the Contact form working. you need too add a form at [W3Layouts forms](https://my.w3layouts.com/Forms/). Follow the steps [How to enable W3Layouts Contact form](https://w3layouts.com/articles/introducing-contact-forms-for-static-websites/) instructions to create a form then your contact form is all set.
+
 
 ### Add Google Analytics
 Change `trackingId` in `gatsby-config.js` at `gatsby-plugin-google-analytics` plugin
 
 ---
 
-I hope you will build a great website with Delog. If you like it please spread the word, Feel free to contribute and raise a pull request :)
-
-For issues,feedback on enhancement or sharing your new awesome website built with delog. [Create New Issue](https://github.com/W3Layouts/gatsby-starter-delog/issues/new) Here
-
----
-
-## Roadmap
-We are maintaining future task in [Github Project](https://github.com/W3Layouts/gatsby-starter-delog/projects/1), even though most changes are instantaious. We try keep them posted here.
+For issues,feedback on enhancement or sharing your new awesome website built with delog. [Create New Issue](https://github.com/zakirsajib/gatsby-starter-delog/issues/new) Here
 
 ---
 
@@ -122,3 +112,5 @@ All notable changes to this project are listed here.
 
 ### [1.0.0] - 2020-03-14
 - Launch of GatsbyJS and Netlify CMS based starter `gatsby-starter-delog`
+
+[![Netlify Status](https://api.netlify.com/api/v1/badges/4a01b4d8-c36b-4fdf-a941-49a86b508e5b/deploy-status)](https://app.netlify.com/sites/apz/deploys)
