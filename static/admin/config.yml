@@ -70,6 +70,9 @@ collections:
         hint: "Image size 1280x800 works best :)"
         required: false
         media_library:
+        	name: cloudinary
           config:
+          	cloud_name: zakirsajib
+		  	api_key: 384685599798764
             multiple: false
       - { name: body, label: Body, widget: markdown }
