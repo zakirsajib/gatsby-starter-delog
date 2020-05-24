@@ -75,4 +75,4 @@ collections:
           	cloud_name: zakirsajib
 		  	api_key: 384685599798764
             multiple: false
-      - { name: body, label: Body, widget: markdown }
+      
