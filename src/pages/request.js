@@ -21,7 +21,7 @@ const ContactPage = ({
           <h1 className="post-title">Request</h1>
         </div>
         <div>
-        	<strong>Please list your movie list here.</strong>
+        	<strong>Please request your movie here.</strong><hr />
 			<FacebookProvider appId={site.siteMetadata.FBAppID}>
 				<Comments href="https://apz.netlify.app/" />
 			</FacebookProvider>
