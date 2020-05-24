@@ -26,6 +26,7 @@
     "prismjs": "^1.19.0",
     "react": "^16.12.0",
     "react-dom": "^16.12.0",
+    "react-facebook": "^8.1.4",
     "react-helmet": "^5.2.1"
   },
   "devDependencies": {
@@ -45,7 +46,7 @@
     "develop": "gatsby develop",
     "format": "prettier --write \"**/*.{js,jsx,json,md}\"",
     "start": "npm run develop",
-    "restart": "kill-port --port 8000 && npm run clean && GATSBY_CONCURRENT_DOWNLOAD=8 gatsby develop",
+    "restart": "kill-port --port 8000 && gatsby clean && GATSBY_CONCURRENT_DOWNLOAD=8 gatsby develop",
     "serve": "gatsby serve",
     "clean": "gatsby clean",
     "test": "echo \"Write tests! -> https://gatsby.dev/unit-testing\" && exit 1"
