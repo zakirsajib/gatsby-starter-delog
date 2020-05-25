@@ -25,7 +25,7 @@ export default ({ children }) => {
       </header>
       {children}
       <footer className="site-footer">
-        <p>&copy; {new Date().getFullYear()} Ahmed - Partho - Zakir &bull; Made with <span role="img" aria-label="love">❤️</span> by <a href="https://zakirsajib.netlify.app" target="_blank">Zakir</a></p>
+        <p>&copy; {new Date().getFullYear()} Ahmed - Partho - Zakir &bull; Made with <span role="img" aria-label="love">❤️</span> by <a href="https://zakirsajib.netlify.app" target="_blank" rel="noreferrer">Zakir</a></p>
       </footer>
     </div>
   )
