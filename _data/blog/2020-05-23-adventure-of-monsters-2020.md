@@ -2,7 +2,7 @@
 template: BlogPost
 path: /adventure-of-monsters
 date: 2020-05-23T19:24:23.032Z
-title: ADVENTURE OF MONSTERS
+title: Adventure Of Monsters
 thumbnail: /assets/carousel-exoticanimals.jpg
 ---
 Presenting Hollywood Movie In Hindi Dubbed "**ADVENTURE OF MONSTERS**" starring **Louise Bourgoin**, **Mathieu Amalric**, **Gilles Lellouch**e.
