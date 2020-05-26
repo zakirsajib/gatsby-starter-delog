@@ -5,6 +5,12 @@ This simple website built with GatsbyJS and Netlify CMS. Deploys on netlify with
 
 [![APZ - Ahmed | Partho | Zakir](https://github.com/zakirsajib/gatsby-starter-delog/blob/master/assets/apz.jpg)](https://apz.netlify.app/)
 
+[![APZ - Workflow](https://github.com/zakirsajib/gatsby-starter-delog/blob/master/assets/workflow.jpg)](https://apz.netlify.app/)
+
+[![APZ - Admin](https://github.com/zakirsajib/gatsby-starter-delog/blob/master/assets/admin.jpg)](https://apz.netlify.app/)
+
+[![APZ - Post](https://github.com/zakirsajib/gatsby-starter-delog/blob/master/assets/post.jpg)](https://apz.netlify.app/)
+
 
 [![Deploy to Netlify](https://www.netlify.com/img/deploy/button.svg)](https://app.netlify.com/start/deploy?repository=https://github.com/zakirsajib/gatsby-starter-delog)
 
