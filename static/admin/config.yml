@@ -6,6 +6,8 @@ backend:
 media_folder: static/assets
 public_folder: /assets
 
+publish_mode: editorial_workflow
+
 collections:
   - name: settings
     label: Settings
@@ -42,7 +44,7 @@ collections:
                 default: ''
                 required: false
   - name: blog
-    label: Blog
+    label: Movie
     folder: _data/blog
     slug: '{{year}}-{{month}}-{{day}}-{{slug}}'
     create: true
@@ -64,7 +66,7 @@ collections:
         name: metaDescription
         widget: text
         required: false
-      - label: Featured Image
+      - label: Movie Poster
         name: thumbnail
         widget: image
         hint: "Image size 1280x800 works best :)"
