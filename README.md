@@ -1,6 +1,6 @@
 [![Netlify Status](https://api.netlify.com/api/v1/badges/4a01b4d8-c36b-4fdf-a941-49a86b508e5b/deploy-status)](https://app.netlify.com/sites/apz/deploys)
 
-# APZ - Ahmed | Partho | Zakir ( Our own Netflix site :) )
+# APZ - Ahmed | Partho | Zakir ( Our own Netflix site :smiley: :smiley: :smiley: )
 This simple website built with GatsbyJS and Netlify CMS. Deploys on netlify with single click. 
 
 [![APZ - Ahmed | Partho | Zakir](https://github.com/zakirsajib/gatsby-starter-delog/blob/master/assets/apz.jpg)](https://apz.netlify.app/)
