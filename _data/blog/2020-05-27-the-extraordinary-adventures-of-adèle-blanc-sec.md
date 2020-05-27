@@ -7,15 +7,6 @@ thumbnail: /assets/les_aventures_extraordinaires_dadele_blancsec_xlg.jpg
 ---
 Presenting Hollywood Movie In Hindi Dubbed "**ADVENTURE OF MONSTERS**" starring **Louise Bourgoin**, **Mathieu Amalric**, **Gilles Lellouch**e.
 
-**Credits**: 
-
-* Director: Luc Besson
-* Writers: Luc Besson, Jacques Tardi 
-* Producer: Virginie Besson-Silla 
-* Cast: Louise Bourgoin, Mathieu Amalric, Gilles Lellouche 
-* Music : Éric Serra 
-* Cinematography : Thierry Arbogast
-
 **Synopsis**: 
 
 Desperate to cure her near catatonic sister, intrepid authoress Adèle Blanc-Sec braves ancient Egyptian tombs and modern Egyptian lowlife to locate a mummified doctor and get him back to Paris. Her hope is that oddball Professor Espérandieu will then use his unusual powers to bring the doctor back to life so he, in turn, can use his centuries-old skills on the unfortunate sister. In Paris however Espérandieu is already causing mayhem, having brought to life what was a safe museum egg but is now a very active pterodactyl. 
