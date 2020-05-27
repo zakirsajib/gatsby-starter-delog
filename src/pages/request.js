@@ -16,7 +16,7 @@ const ContactPage = ({
         <title>Contact — {site.siteMetadata.title}</title>
         <meta name="description" content={"Contact page of " + site.siteMetadata.description} />
       </Helmet>
-      <div className="two-grids -contact">
+      <div className="-contact">
         <div>
         	<p><strong>Please request your movie here.</strong></p><hr />
 			<FacebookProvider appId={site.siteMetadata.FBAppID}>
