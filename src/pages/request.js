@@ -17,9 +17,6 @@ const ContactPage = ({
         <meta name="description" content={"Contact page of " + site.siteMetadata.description} />
       </Helmet>
       <div className="two-grids -contact">
-        <div className="post-thumbnail" style={{backgroundImage: `url('/assets/alexander-andrews-HgUDpaGPTEA-unsplash.jpg')`, marginBottom: 0}}>
-          <h1 className="post-title">Request</h1>
-        </div>
         <div>
         	<p><strong>Please request your movie here.</strong></p><hr />
 			<FacebookProvider appId={site.siteMetadata.FBAppID}>
