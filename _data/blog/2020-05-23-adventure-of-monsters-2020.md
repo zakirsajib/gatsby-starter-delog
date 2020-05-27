@@ -1,9 +1,9 @@
 ---
 template: BlogPost
-path: /adventure-of-monsters
+path: /the-Extraordinary-Adventures-of-Adèle-Blanc-Sec
 date: 2020-05-23T19:24:23.032Z
-title: Adventure Of Monsters
-thumbnail: /assets/carousel-exoticanimals.jpg
+title: The Extraordinary Adventures of Adèle Blanc-Sec (2010)
+thumbnail: /assets/les_aventures_extraordinaires_dadele_blancsec_ver19_xlg.jpg
 ---
 Presenting Hollywood Movie In Hindi Dubbed "**ADVENTURE OF MONSTERS**" starring **Louise Bourgoin**, **Mathieu Amalric**, **Gilles Lellouch**e.
 
