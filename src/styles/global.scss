@@ -175,12 +175,12 @@ a {
 }
 .post-thumbnail {
   text-align: center;
-  min-height: 380px;
+  min-height: 100vh;
   //background-image: url('/assets/circles-light.png');
-  background-color: var(--featured-bg);
+  //background-color: var(--featured-bg);
   background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
+  background-size: contain;
+  background-position: left top;
   border-radius: 0;
   margin-bottom: 36px;
   color: var(--featured-text);
@@ -191,7 +191,7 @@ a {
   overflow: hidden;
   &:before {
     content: "";
-    background: rgba(0,0,0,0.4);
+    //background: rgba(0,0,0,0.4);
     position: absolute;
     top: 0;
     left: 0;
