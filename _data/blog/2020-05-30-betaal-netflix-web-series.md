@@ -4,7 +4,7 @@ path: /Betaal
 date: 2020-05-30T15:15:29.214Z
 title: Betaal (Netflix Web Series)
 ---
-Its Shahrukh Khan Production **Red Chili Entertainment** and **Netflix** produced this amazing web series **Betaal**. 
+Its *Shahrukh Khan* Production **Red Chillies Entertainment** and **Netflix** produced this amazing web series **Betaal**. 
 
 **Warning: Don't watch at night alone :)**
 
