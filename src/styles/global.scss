@@ -1,4 +1,4 @@
-$font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Oxygen-Sans,Ubuntu,Cantarell,"Helvetica Neue",sans-serif;
+$font-family: Elena, -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Oxygen-Sans,Ubuntu,Cantarell,"Helvetica Neue",sans-serif;
 
 html,
 body {
@@ -53,9 +53,13 @@ body.dark {
 /* System Fonts as used by Medium and WordPress */
 body {
   font-family: $font-family;
+  font-size: calc(.35842vw + .95296em);
+  font-weight: 400;
+  font-style: normal;
   border-top: 5px solid var(--primary-color);
   background-color: var(--background);
   color: var(--text-color);
+  line-height: calc(1.5em + .2vw);
 }
 a {
   color: var(--primary-color);
@@ -152,7 +156,6 @@ a {
   padding: 0;
   background:var(--background);
   color: var(--text-color);
-  line-height: 1.5;
   > .blog-post-content {
     max-width: 768px;
     margin: 0 auto;
@@ -171,7 +174,7 @@ a {
     margin-bottom: 32px;
     text-align: center;
   }
-  
+
 }
 .post-thumbnail {
   text-align: center;
@@ -298,13 +301,13 @@ a {
   }
 }
 /* Portrait and Landscape */
-@media only screen 
+@media only screen
 and (min-width: 768px) {
 .grids {
   grid-template-columns: 1fr 1fr 1fr;
 }
 }
-@media only screen 
+@media only screen
   and (min-width: 1024px) {
   .grids {
     grid-template-columns: 1fr 1fr 1fr 1fr;
