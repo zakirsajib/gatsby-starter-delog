@@ -5,6 +5,8 @@ import Layout from "../components/layout"
 
 import { FacebookProvider, Comments } from 'react-facebook';
 
+import 'animate.css/animate.min.css'
+
 const ContactPage = ({
   data: {
     site
@@ -16,9 +18,9 @@ const ContactPage = ({
         <title>Contact — {site.siteMetadata.title}</title>
         <meta name="description" content={"Contact page of " + site.siteMetadata.description} />
       </Helmet>
-      <div className="-contact">
+      <div className="-contact animate__animated animate__slideInUp">
         <div>
-        	<p><strong>Please request your movie here.</strong></p><hr />
+        	<h2>Please request your movie here.</h2><hr />
 			<FacebookProvider appId={site.siteMetadata.FBAppID}>
 				<Comments href="https://apz.netlify.app/" />
 			</FacebookProvider>

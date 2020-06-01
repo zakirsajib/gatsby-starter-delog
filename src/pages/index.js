@@ -4,6 +4,7 @@ import { graphql } from 'gatsby'
 import Layout from "../components/layout"
 import PostLink from "../components/post-link"
 //import HeroHeader from "../components/heroHeader"
+import 'animate.css/animate.min.css'
 
 const IndexPage = ({
   data: {
@@ -22,7 +23,7 @@ const IndexPage = ({
         <title>{site.siteMetadata.title}</title>
         <meta name="description" content={site.siteMetadata.description} />
       </Helmet>
-      <div className="grids">
+      <div className="grids animate__animated animate__fadeIn">
         {Posts}
       </div>
     </Layout>

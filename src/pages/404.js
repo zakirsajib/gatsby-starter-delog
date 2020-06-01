@@ -1,7 +1,8 @@
 import React from "react"
-import Helmet from 'react-helmet';
+import Helmet from 'react-helmet'
 import Layout from "../components/layout"
-import { Link } from "gatsby";
+import { Link } from "gatsby"
+import 'animate.css/animate.min.css'
 
 const notFound = () => {
   return (
@@ -37,7 +38,9 @@ const notFound = () => {
             fill="currentColor"
           />
         </svg>
-        <p>Either you are in a wrong page or you have lost. Lets go back <Link to="/">home</Link> safely</p>
+        <p
+          className="animate__animated animate__slideInUp">
+          Either you are in a wrong page or you have lost. Lets go back <Link to="/">home</Link> safely</p>
       </div>
     </Layout>
   )
