@@ -18,4 +18,4 @@ Its *Shahrukh Khan* Production **Red Chillies Entertainment** and **Netflix** pr
 1. **Series 1:** 
 
    * [Episode 1 (The Tunnel) and Episode 2 (The Barracks)](https://we.tl/t-A3yIhvEo2t)
-   * Episode 3 ( The Battle) and Episode 4 (The Colonel)
+   * [Episode 3 ( The Battle) and Episode 4 (The Colonel)](https://we.tl/t-7QbK9LesLH)
