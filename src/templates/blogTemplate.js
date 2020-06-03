@@ -6,7 +6,7 @@ import Img from 'gatsby-image'
 
 import Sticky from 'react-sticky-el'
 
-import 'animate.css/animate.min.css'
+//import 'animate.css/animate.min.css'
 
 export default function Template({
   data, // this prop will be injected by the GraphQL query below.

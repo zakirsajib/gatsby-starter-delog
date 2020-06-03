@@ -5,8 +5,6 @@ import Layout from "../components/layout"
 
 import { FacebookProvider, Comments } from 'react-facebook';
 
-import 'animate.css/animate.min.css'
-
 const ContactPage = ({
   data: {
     site

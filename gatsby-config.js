@@ -105,7 +105,7 @@ module.exports = {
       options: {
         develop: true,
         ignore: ['styles/prismjs'],
-        purgeOnly: ['styles/global.scss, templates/'],
+        purgeOnly: ['styles/global.scss'],
       },
     },
     `gatsby-plugin-react-helmet`,
