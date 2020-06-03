@@ -103,9 +103,9 @@ module.exports = {
     {
       resolve: `gatsby-plugin-purgecss`,
       options: {
-        develop: false,
+        develop: true,
         ignore: ['styles/prismjs'],
-        purgeOnly: ['styles/global.scss'],
+        purgeOnly: ['styles/global.scss, animate.css/animate.min.css'],
       },
     },
     `gatsby-plugin-react-helmet`,
