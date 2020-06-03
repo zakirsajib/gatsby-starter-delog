@@ -327,14 +327,14 @@ and (min-width: 768px) {
     grid-gap: 64px;
   }
 }
-/* purgecss start ignore */
 @media only screen
   and (max-width: 1023px) {
-    .sticky{
+    /*! purgecss start ignore */
+    .sticky {
       position: relative!important;
     }
+    /*! purgecss end ignore */
 }
-/* purgecss end ignore */
 
 .animate__slideInDown {
     animation-name: slideInDown;
