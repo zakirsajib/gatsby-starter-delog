@@ -1,4 +1,3 @@
-//import 'lazysizes'
 import './src/fonts/fonts.css'
 import './src/styles/global.scss'
 
