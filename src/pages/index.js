@@ -48,7 +48,13 @@ export const pageQuery = graphql`
             date(formatString: "MMMM DD, YYYY")
             path
             title
-            thumbnail
+            thumbnail {
+              childImageSharp {
+                fluid(maxWidth: 1013, quality: 100) {
+                  ...GatsbyImageSharpFluid
+                }
+              }
+            }
           }
         }
       }

@@ -2,6 +2,9 @@ import React from "react"
 import Helmet from 'react-helmet';
 import { graphql } from "gatsby"
 import Layout from "../components/layout"
+import Img from 'gatsby-image'
+
+import Sticky from 'react-sticky-el'
 
 import 'animate.css/animate.min.css'
 
@@ -27,16 +30,22 @@ export default function Template({
 	            </div>
 	          )}
 	          {!!frontmatter.thumbnail && (
-	            <div className="animate__animated animate__slideInLeft post-thumbnail" style={{backgroundImage: `url(${frontmatter.thumbnail})`}}>
-{/*
-	              <h1 className="post-title">{frontmatter.title}</h1>
-	              <div className="post-meta">{frontmatter.date}</div>
-*/}
-	            </div>
+              <Sticky topOffset={0} stickyStyle={{ transform: 'translateY(0px)' }}>
+                <div
+                  className="animate__animated animate__slideInLeft post-thumbnail"
+                >
+                  <Img
+                    fluid={frontmatter.thumbnail.childImageSharp.fluid}
+                    alt={frontmatter.title + "- Featured Shot"}
+                  />
+	              </div>
+              </Sticky>
 	          )}
               <div>
                 <h1
-                  className="animate__animated animate__slideInDown post-title">{frontmatter.title}</h1>
+                  className="animate__animated animate__slideInDown post-title"
+                >{frontmatter.title}
+                </h1>
                 <hr />
                 <div
     	            className="blog-post-content"
@@ -63,7 +72,13 @@ export const pageQuery = graphql`
         date(formatString: "MMMM DD, YYYY")
         path
         title
-        thumbnail
+        thumbnail {
+          childImageSharp {
+            fluid(maxWidth: 1013) {
+              ...GatsbyImageSharpFluid
+            }
+          }
+        }
         metaDescription
       }
     }

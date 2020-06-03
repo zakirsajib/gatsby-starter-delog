@@ -8,31 +8,76 @@ module.exports = {
   /* Your site config here */
   siteMetadata: require("./site-meta-data.json"),
   plugins: [
+    // {
+    // resolve: "gatsby-transformer-remark",
+    //   options: {
+    //       plugins: [
+    //         {
+    //           resolve: "gatsby-remark-normalize-paths",
+    //           options: {
+    //             pathFields: ["image", "thumbnail"],
+    //           },
+    //         },
+    //       ],
+    //   },
+    // },
     {
       resolve: `gatsby-source-filesystem`,
       options: {
-        name: `markdown-pages`,
-        path: `${__dirname}/_data`,
+        name: `assets`,
+        path: `${__dirname}/static/assets`,
       },
     },
     {
-      resolve: `gatsby-transformer-remark`,
+      resolve: `gatsby-source-filesystem`,
       options: {
-        plugins: [{
-          resolve: `gatsby-remark-prismjs`,
-          options: {
-            classPrefix: "language-",
-            inlineCodeMarker: null,
-            aliases: {},
-            showLineNumbers: false,
-            noInlineHighlight: false,
-          },
-        },
-        {
-          resolve: 'gatsby-remark-emojis',
-        }],
+        name: `blog`,
+        path: `${__dirname}/_data/blog`,
       },
     },
+    `gatsby-plugin-sharp`,
+    `gatsby-transformer-sharp`,
+    {
+      resolve: `gatsby-transformer-remark`,
+        options: {
+          plugins: [
+            {
+              resolve: `gatsby-remark-relative-images`,
+            },
+            {
+              resolve: `gatsby-remark-images`,
+              options: {
+                maxWidth: 1013,
+              },
+            },
+            {
+              resolve: `gatsby-remark-responsive-iframe`,
+              options: {
+                wrapperStyle: `margin-bottom: 1.0725rem`,
+              },
+            },
+          ]
+      }
+    },
+
+//    {
+//      resolve: `gatsby-transformer-remark`,
+//      options: {
+//        plugins: [{
+//          resolve: `gatsby-remark-prismjs`,
+//          options: {
+//            classPrefix: "language-",
+//            inlineCodeMarker: null,
+//            aliases: {},
+//            showLineNumbers: false,
+//            noInlineHighlight: false,
+//          },
+//        },
+//        {
+//          resolve: 'gatsby-remark-emojis',
+//        }],
+//      },
+//    },
     {
       resolve: `gatsby-plugin-google-analytics`,
       options: {
@@ -53,7 +98,16 @@ module.exports = {
         icon: "src/images/netflix.svg",
       },
     },
-    `gatsby-plugin-sass`, 
+    `gatsby-plugin-sass`,
+    `gatsby-plugin-styled-components`,
+    {
+      resolve: `gatsby-plugin-purgecss`,
+      options: {
+        develop: false,
+        ignore: ['styles/prismjs'],
+        purgeOnly: ['styles/global.scss'],
+      },
+    },
     `gatsby-plugin-react-helmet`,
     `gatsby-plugin-netlify-cms`,
     'gatsby-plugin-dark-mode',
