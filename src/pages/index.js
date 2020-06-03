@@ -4,7 +4,6 @@ import { graphql } from 'gatsby'
 import Layout from "../components/layout"
 import PostLink from "../components/post-link"
 //import HeroHeader from "../components/heroHeader"
-import 'animate.css/animate.min.css'
 
 const IndexPage = ({
   data: {

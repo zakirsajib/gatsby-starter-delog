@@ -342,6 +342,12 @@ and (min-width: 768px) {
 .animate__slideInLeft {
     animation-name: slideInLeft;
 }
+.animate__fadeIn {
+    animation-name: fadeIn;
+}
+.animate__slideInUp{
+  animation-name:slideInUp
+}
 .animate__animated {
     animation-duration: 1s;
     animation-duration: var(--animate-duration);
@@ -364,6 +370,23 @@ and (min-width: 768px) {
  to {
   transform:translateZ(0)
  }
+}
+@keyframes fadeIn{
+  0%{
+    opacity:0
+  }
+  to{
+    opacity:1
+  }
+}
+@keyframes slideInUp{
+  0%{
+    transform:translate3d(0,100%,0);
+    visibility:visible
+  }
+  to{
+    transform:translateZ(0)
+  }
 }
 
 // theme-changer
