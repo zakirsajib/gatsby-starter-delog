@@ -35,13 +35,13 @@ module.exports = {
         path: `${__dirname}/_data/blog`,
       },
     },
-    {
-      resolve: `gatsby-source-filesystem`,
-      options: {
-        name: `pages`,
-        path: `${__dirname}/_data/pages`,
-      },
-    },
+    // {
+    //   resolve: `gatsby-source-filesystem`,
+    //   options: {
+    //     name: `pages`,
+    //     path: `${__dirname}/_data/pages`,
+    //   },
+    // },
     `gatsby-plugin-sharp`,
     `gatsby-transformer-sharp`,
     {
