@@ -3,6 +3,7 @@ template: BlogPost
 path: /extraction
 date: 2020-05-23T15:39:52.568Z
 title: Extraction
+tags: ["Hollywood", "Action", "Netflix"]
 metaDescription: >-
   **Extraction**is a 2020 American action-thriller film directed by Sam Hargrave
   (in his feature debut) and written by Joe Russo, based on the graphic novel

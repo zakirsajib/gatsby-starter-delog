@@ -4,6 +4,7 @@ path: /andhaDhun
 date: 2020-06-01T16:30:20.412Z
 title: AndhaDhun
 thumbnail: /assets/andhadhun_xlg.jpg
+tags: ["Bollywood", "Drama", "Thriller"]
 ---
 Akash a blind pianist is preparing for a London concert. Sophie's scooter bumps into Akash and upon finding he a pianist she takes him to her restaurant Franco's run by her father and offers him a job. Akash meets 70s actor Pramod Sinha at the restaurant who asks him to do a private concert of his songs at his residence to surprise his wife Simi. Next Day upon reaching his house a shocking surprise is waiting for Akash.
 

@@ -35,6 +35,13 @@ module.exports = {
         path: `${__dirname}/_data/blog`,
       },
     },
+    {
+      resolve: `gatsby-source-filesystem`,
+      options: {
+        name: `pages`,
+        path: `${__dirname}/_data/pages`,
+      },
+    },
     `gatsby-plugin-sharp`,
     `gatsby-transformer-sharp`,
     {
@@ -86,6 +93,15 @@ module.exports = {
     //     head: true,
     //   }
     // },
+    {
+      resolve: `gatsby-plugin-nprogress`,
+      options: {
+        // Setting a color is optional.
+        color: `#E50914`,
+        // Enable the loading spinner.
+        showSpinner: true,
+      },
+    },
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
