@@ -80,7 +80,6 @@ module.exports = {
       resolve: `gatsby-plugin-purgecss`,
       options: {
         develop: false,
-        ignore: ['styles/prismjs'],
         purgeOnly: ['styles/global.scss'],
       },
     },
