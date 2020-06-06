@@ -1,11 +1,11 @@
 import React from "react"
 import Helmet from 'react-helmet';
-import { graphql } from "gatsby"
+import { kebabCase } from 'lodash'
+import { graphql, Link } from "gatsby"
 import Layout from "../components/layout"
 import Img from 'gatsby-image'
 
 import Sticky from 'react-sticky-el'
-
 
 export default function Template({
   data, // this prop will be injected by the GraphQL query below.
@@ -50,6 +50,18 @@ export default function Template({
     	            className="blog-post-content"
     	            dangerouslySetInnerHTML={{ __html: html }}
     	          />
+
+                  {frontmatter.tags && frontmatter.tags.length ? (
+                    <div className="taglist">
+                      {frontmatter.tags.map((tag) => (
+                        <Link
+                          key={tag + `tag`}
+                          to={`/tags/${kebabCase(tag)}/`}
+                        >{tag}
+                        </Link>
+                      ))}
+                    </div>
+                  ) : null}
               </div>
             </div>
         </article>
@@ -71,6 +83,7 @@ export const pageQuery = graphql`
         date(formatString: "MMMM DD, YYYY")
         path
         title
+        tags
         thumbnail {
           childImageSharp {
             fluid(maxWidth: 1013) {

@@ -1,70 +1,84 @@
+const _ = require('lodash')
+const path = require('path')
+const { createFilePath } = require('gatsby-source-filesystem')
+const { fmImagesToRelative } = require('gatsby-remark-relative-images')
 
-
-const path = require(`path`)
-const { createFilePath } = require(`gatsby-source-filesystem`)
-const {fmImagesToRelative} = require('gatsby-remark-relative-images');
-
-exports.createPages = ({ graphql, actions }) => {
+exports.createPages = ({ actions, graphql }) => {
   const { createPage } = actions
 
-  const blogPostTemplate = path.resolve(`./src/templates/blogTemplate.js`)
-  return graphql(
-    `
-      {
-        allMarkdownRemark(
-          sort: { fields: [frontmatter___date], order: DESC }
-          limit: 1000
-        ) {
-          edges {
-            node {
-              id
-              fields {
-                slug
-              }
-              frontmatter {
-                title
-                path
-                tags
-              }
+  return graphql(`
+    {
+      allMarkdownRemark(limit: 1000) {
+        edges {
+          node {
+            id
+            fields {
+              slug
+            }
+            frontmatter {
+              title
+              path
+              tags
+              template
             }
           }
         }
       }
-    `
-  ).then(result => {
+    }
+  `).then((result) => {
     if (result.errors) {
-      throw result.errors
+      result.errors.forEach((e) => console.error(e.toString()))
+      return Promise.reject(result.errors)
     }
 
-    // Create blog posts pages.
     const posts = result.data.allMarkdownRemark.edges
 
-    posts.forEach((post, index) => {
-      // paging will not work as is, throws a build error
-      /* const previous = index === posts.length - 1 ? null : posts[index + 1].node
-      const next = index === 0 ? null : posts[index - 1].node */
-
-
+    posts.forEach((edge) => {
+      const id = edge.node.id
       createPage({
-        //path: post.node.frontmatter.path,
-         // changed to this as the first item path key  processed would throw a empty string
-        path: post.node.frontmatter.path===""?`/posts/${post.node.fields.slug}`:post.node.frontmatter.path,
-        component: blogPostTemplate,
+        path: edge.node.frontmatter.path===""?`/posts/${edge.node.fields.slug}`:edge.node.frontmatter.path,
+        tags: edge.node.frontmatter.tags,
+        component: path.resolve(
+          `src/templates/blogTemplate.js`
+        ),
+        // additional data can be passed via context
         context: {
-          slug: post.node.fields.slug,
-          /* previous,
-          next, */
+          slug: edge.node.fields.slug,
+          id,
         },
       })
     })
 
-    return null
+    // Tag pages:
+    let tags = []
+    // Iterate through each post, putting all found tags into `tags`
+    posts.forEach((edge) => {
+      if (_.get(edge, `node.frontmatter.tags`)) {
+        tags = tags.concat(edge.node.frontmatter.tags)
+      }
+    })
+    // Eliminate duplicate tags
+    tags = _.uniq(tags)
+
+    // Make tag pages
+    tags.forEach((tag) => {
+      const tagPath = `/tags/${_.kebabCase(tag)}/`
+
+      createPage({
+        path: tagPath,
+        component: path.resolve(`src/templates/tags.js`),
+        context: {
+          tag,
+        },
+      })
+    })
   })
 }
 
 exports.onCreateNode = ({ node, actions, getNode }) => {
   const { createNodeField } = actions
-  fmImagesToRelative(node)
+  fmImagesToRelative(node) // convert image paths for gatsby images
+
   if (node.internal.type === `MarkdownRemark`) {
     const value = createFilePath({ node, getNode })
     createNodeField({
@@ -74,46 +88,3 @@ exports.onCreateNode = ({ node, actions, getNode }) => {
     })
   }
 }
-//
-//
-//
-//
-// path = require(`path`)
-//
-// exports.createPages = async ({ actions, graphql, reporter }) => {
-//   const { createPage } = actions
-//
-//   const blogPostTemplate = path.resolve(`src/templates/blogTemplate.js`)
-//
-//   const result = await graphql(`
-//     {
-//       allMarkdownRemark(
-//         sort: { order: DESC, fields: [frontmatter___date] }
-//         limit: 1000
-//       ) {
-//         edges {
-//           node {
-//             id
-//             frontmatter {
-//               path
-//             }
-//           }
-//         }
-//       }
-//     }
-//   `)
-//
-//   // Handle errors
-//   if (result.errors) {
-//     reporter.panicOnBuild(`Error while running GraphQL query.`)
-//     return
-//   }
-//
-//   result.data.allMarkdownRemark.edges.forEach(({ node }) => {
-//     createPage({
-//       path: node.frontmatter.path,
-//       component: blogPostTemplate,
-//       context: {}, // additional data can be passed via context
-//     })
-//   })
-// }

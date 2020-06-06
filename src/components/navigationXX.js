@@ -23,8 +23,7 @@ class Navbar extends React.Component {
   showDropdownMenu(event) {
     event.preventDefault();
     this.setState({ displayMenu: true }, () => {
-      document.addEventListener('click', this.hideDropdownMenu);
-
+    document.addEventListener('click', this.hideDropdownMenu);
     });
   }
 
@@ -91,7 +90,7 @@ class Navbar extends React.Component {
                   x="0.581177"
                   y="0.71875"
                   width="30"
-                  height="4"
+                  height="2"
                   fill="#E50914"
                 >
                 </rect>
@@ -99,7 +98,7 @@ class Navbar extends React.Component {
                   x="0.581177"
                   y="10.7188"
                   width="30"
-                  height="4"
+                  height="2"
                   fill="#E50914"
                 >
                 </rect>
@@ -107,7 +106,7 @@ class Navbar extends React.Component {
                   x="0.581177"
                   y="20.7188"
                   width="30"
-                  height="4"
+                  height="2"
                   fill="#E50914"
                 >
                 </rect>
@@ -115,43 +114,6 @@ class Navbar extends React.Component {
               </button>
               { this.state.displayMenu ? (
               <nav className="navigation animate__animated animate__fadeIn">
-                <div className="closeMenu">
-                  <svg
-                    width="31"
-                    height="25"
-                    viewBox="0 0 31 25"
-                    fill="none"
-                    xmlns="http://www.w3.org/2000/svg"
-                    aria-hidden="true"
-                    focusable="false"
-                    class="icon-hamburger masthead-nav-menu-hamburger"
-                  >
-                    <rect
-                      x="0.581177"
-                      y="0.71875"
-                      width="30"
-                      height="4"
-                      fill="#E50914"
-                    >
-                    </rect>
-                    <rect
-                      x="0.581177"
-                      y="10.7188"
-                      width="30"
-                      height="4"
-                      fill="#E50914"
-                    >
-                    </rect>
-                    <rect
-                      x="0.581177"
-                      y="20.7188"
-                      width="30"
-                      height="4"
-                      fill="#E50914"
-                    >
-                    </rect>
-                  </svg>
-                </div>
                 <Link
                   to='/'
                 > All

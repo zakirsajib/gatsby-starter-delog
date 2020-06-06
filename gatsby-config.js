@@ -8,19 +8,6 @@ module.exports = {
   /* Your site config here */
   siteMetadata: require("./site-meta-data.json"),
   plugins: [
-    // {
-    // resolve: "gatsby-transformer-remark",
-    //   options: {
-    //       plugins: [
-    //         {
-    //           resolve: "gatsby-remark-normalize-paths",
-    //           options: {
-    //             pathFields: ["image", "thumbnail"],
-    //           },
-    //         },
-    //       ],
-    //   },
-    // },
     {
       resolve: `gatsby-source-filesystem`,
       options: {
@@ -66,33 +53,6 @@ module.exports = {
           ]
       }
     },
-
-//    {
-//      resolve: `gatsby-transformer-remark`,
-//      options: {
-//        plugins: [{
-//          resolve: `gatsby-remark-prismjs`,
-//          options: {
-//            classPrefix: "language-",
-//            inlineCodeMarker: null,
-//            aliases: {},
-//            showLineNumbers: false,
-//            noInlineHighlight: false,
-//          },
-//        },
-//        {
-//          resolve: 'gatsby-remark-emojis',
-//        }],
-//      },
-//    },
-    // {
-    //   resolve: `gatsby-plugin-google-analytics`,
-    //   options: {
-    //     // The property ID; the tracking code won't be generated without it. replace with yours
-    //     trackingId: "UA-164743872-1",
-    //     head: true,
-    //   }
-    // },
     {
       resolve: `gatsby-plugin-nprogress`,
       options: {
@@ -119,7 +79,7 @@ module.exports = {
     {
       resolve: `gatsby-plugin-purgecss`,
       options: {
-        develop: true,
+        develop: false,
         ignore: ['styles/prismjs'],
         purgeOnly: ['styles/global.scss'],
       },
