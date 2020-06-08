@@ -11,8 +11,7 @@ tags:
   - Hollywood
   - Action
   - Netflix
-categories:
-  - Movie
+categories: Movie
 thumbnail: /assets/extraction_netflix_xlg.jpg
 trailer: <iframe width="560" height="315"
   src="https://www.youtube.com/embed/L6P3nI6VnlY" frameborder="0"
