@@ -121,7 +121,7 @@ export default function Template({
                           </Tabs>
                     </div>
                   }
-
+                {/*
                   <Player fluid="true">
                     <BigPlayButton position="center" />
                     <LoadingSpinner />
@@ -136,6 +136,7 @@ export default function Template({
                       type="video/mp4"
                     />
                   </Player>
+                  */}
 
 
               </div>
