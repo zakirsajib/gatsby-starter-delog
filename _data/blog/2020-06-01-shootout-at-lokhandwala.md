@@ -5,6 +5,7 @@ date: 2020-06-01T08:08:50.653Z
 title: Shootout at Lokhandwala
 thumbnail: /assets/shoot_out_at_lokhandwala_ver12_xlg.jpg
 tags: ["Bollywood", "Political", "Action"]
+categories: ["Movie"]
 ---
 **Watch full movie here**:
 

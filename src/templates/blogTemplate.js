@@ -5,6 +5,23 @@ import { graphql, Link } from "gatsby"
 import Layout from "../components/layout"
 import Img from 'gatsby-image'
 
+import { Tab, Tabs, TabList, TabPanel } from 'react-tabs'
+import 'react-tabs/style/react-tabs.css'
+
+import 'video-react/styles/scss/video-react.scss'
+
+import {
+  Player,
+  BigPlayButton,
+  LoadingSpinner,
+  ControlBar,
+  ReplayControl,
+  ForwardControl,
+  VolumeMenuButton,
+  PlaybackRateMenuButton,
+  ClosedCaptionButton
+} from 'video-react'
+
 import Sticky from 'react-sticky-el'
 
 export default function Template({
@@ -13,12 +30,13 @@ export default function Template({
   const { site, markdownRemark } = data // data.markdownRemark holds your post data
   const { siteMetadata } = site
   const { frontmatter, html } = markdownRemark
+
   return (
     <Layout>
-      <Helmet>
-        <title>{frontmatter.title} | {siteMetadata.title}</title>
-        <meta name="description" content={frontmatter.metaDescription} />
-      </Helmet>
+        <Helmet>
+            <title>{frontmatter.title} | {siteMetadata.title}</title>
+            <meta name="description" content={frontmatter.metaDescription} />
+        </Helmet>
       <div className="blog-post-container">
         <article className="post">
           <div className="two-grids">
@@ -59,9 +77,67 @@ export default function Template({
                           to={`/tags/${kebabCase(tag)}/`}
                         >{tag}
                         </Link>
+
                       ))}
                     </div>
                   ) : null}
+
+                  {frontmatter.categories=='Movie' ? (
+                    <div>
+                        <h1>Movie</h1>
+                            <Tabs>
+                              <TabList>
+                                <Tab>Trailer</Tab>
+                                <Tab>More like this</Tab>
+                              </TabList>
+
+                              <TabPanel>
+                                <h2>Any content 1</h2>
+                              </TabPanel>
+                              <TabPanel>
+                                <h2>Any content 2</h2>
+                              </TabPanel>
+                            </Tabs>
+                  </div>
+                  ):
+                    <div>
+                        <h1>Webseries</h1>
+                          <Tabs>
+                            <TabList>
+                              <Tab>Episodes</Tab>
+                              <Tab>Trailer</Tab>
+                              <Tab>More like this</Tab>
+                            </TabList>
+
+                            <TabPanel>
+                              <h2>Any content 1</h2>
+                            </TabPanel>
+                            <TabPanel>
+                              <h2>Any content 2</h2>
+                            </TabPanel>
+                            <TabPanel>
+                              <h2>Any content 3</h2>
+                            </TabPanel>
+                          </Tabs>
+                    </div>
+                  }
+
+                  <Player fluid="true">
+                    <BigPlayButton position="center" />
+                    <LoadingSpinner />
+                    <ControlBar autoHide={true}>
+                      <ReplayControl seconds={10} order={2.1} />
+                      <ForwardControl seconds={10} order={3.2} />
+                      <VolumeMenuButton vertical />
+                      <PlaybackRateMenuButton rates={[5, 2, 1, 0.5, 0.1]} />
+                    </ControlBar>
+                    <source
+                      src="https://res.cloudinary.com/zakirsajib/video/upload/v1591606233/246798-146420-Coffin-Dance-on-PIANO_cwbpn6.mp4"
+                      type="video/mp4"
+                    />
+                  </Player>
+
+
               </div>
             </div>
         </article>
@@ -84,6 +160,7 @@ export const pageQuery = graphql`
         path
         title
         tags
+        categories
         thumbnail {
           childImageSharp {
             fluid(maxWidth: 1013) {

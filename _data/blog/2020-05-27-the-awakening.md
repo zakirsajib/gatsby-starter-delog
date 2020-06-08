@@ -5,6 +5,7 @@ date: 2020-05-27T05:58:57.064Z
 title: The Awakening
 thumbnail: /assets/The-Awakening-poster.jpg
 tags: ["Hollywood", "Horror"]
+categories: ["Movie"]
 ---
 A ghost-debunker comes to a boy's school to disprove the existence of ghosts, only to find her own beliefs challenged.
 

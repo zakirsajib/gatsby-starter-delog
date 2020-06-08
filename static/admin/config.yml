@@ -66,10 +66,18 @@ collections:
         name: metaDescription
         widget: text
         required: false
-      - label: "Tags"
-        name: "tags"
-        widget: "list"
+      - label: Tags
+        name: tags
+        widget: list
         allow_add: true
+
+      - label: Categories
+        name: categories
+        widget: select
+        multiple: false
+        options: ["Movie", "Webseries"]
+        default: ["Movie"]
+
       - label: Movie Poster
         name: thumbnail
         widget: image
@@ -78,4 +86,5 @@ collections:
         media_library:
           config:
             multiple: false
+      - { name: trailer, label: Trailer, widget: markdown }
       - { name: body, label: Body, widget: markdown }
