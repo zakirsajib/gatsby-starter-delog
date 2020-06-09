@@ -76,13 +76,13 @@ module.exports = {
     },
     `gatsby-plugin-sass`,
     `gatsby-plugin-styled-components`,
-    {
-      resolve: `gatsby-plugin-purgecss`,
-      options: {
-        develop: false,
-        purgeOnly: ['styles/global.scss'],
-      },
-    },
+    //{
+     // resolve: `gatsby-plugin-purgecss`,
+     // options: {
+    //    develop: false,
+    //    purgeOnly: ['styles/global.scss'],
+    //  },
+    //},
     `gatsby-plugin-react-helmet`,
     `gatsby-plugin-netlify-cms`,
     'gatsby-plugin-dark-mode',
