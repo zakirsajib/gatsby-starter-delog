@@ -325,10 +325,33 @@ hr{
       min-height: 240px !important;
     }
   }
-  .taglist a {
-    padding: 0 10px 0 0;
-    font-style: italic;
-    font-size: smaller;
+  .taglist {
+      padding-bottom: 1rem;
+      a {
+          padding: 0 10px 0 0;
+          font-style: italic;
+          font-size: smaller;
+      }
+  }
+  .react-tabs__tab-list{
+      border-bottom: 0;
+      .react-tabs__tab{
+          padding: 6px 0 0 0;
+          margin: 0 20px 0 0;
+          border: 0;
+          transform: translateY(.4em);
+          transition: transform .2s linear,-webkit-transform .2s linear,-moz-transform .2s linear,-o-transform .2s linear;
+          &:focus{
+              box-shadow: none;
+          }
+      }
+      .react-tabs__tab--selected{
+          border-bottom: 1px solid;
+          border-radius: 0;
+          background-color: transparent;
+          color: var(--primary-color);
+          transform: translateY(0em);
+      }
   }
 }
 /* Portrait and Landscape */

@@ -29,7 +29,7 @@ export default function Template({
 }) {
   const { site, markdownRemark } = data // data.markdownRemark holds your post data
   const { siteMetadata } = site
-  const { frontmatter, html, trailer} = markdownRemark
+  const { frontmatter, html } = markdownRemark
 
   return (
     <Layout>
@@ -85,71 +85,67 @@ export default function Template({
                   ) : null}
 
                   {frontmatter.categories=='Movie' ? (
-                    <div>
-                        
-                            <Tabs>
-                              <TabList>
-                                <Tab>Trailer</Tab>
-                                <Tab>More like this</Tab>
-                              </TabList>
+                    <Tabs>
+                      <TabList>
+                        <Tab>Trailer</Tab>
+                        <Tab>More like this</Tab>
+                        <Tab>Details</Tab>
+                      </TabList>
 
-                              <TabPanel>
-                                  <div
-                      	            className="blog-post-content"
-                      	            dangerouslySetInnerHTML={{ __html: frontmatter.trailer }}
-                      	           />
-                              </TabPanel>
-                              <TabPanel>
-                                <h2>Coming soon...</h2>
-                              </TabPanel>
-                            </Tabs>
-                  </div>
+                      <TabPanel>
+                          <div
+              	            className="blog-post-content"
+              	            dangerouslySetInnerHTML={{ __html: frontmatter.trailer }}
+              	           />
+                      </TabPanel>
+                      <TabPanel>
+                        <h6>Coming soon...</h6>
+                      </TabPanel>
+                      <TabPanel>
+                        <h6>Details Coming soon...</h6>
+                      </TabPanel>
+                    </Tabs>
                   ):
-                    <div>
+                  <Tabs>
+                    <TabList>
+                      <Tab>Episodes</Tab>
+                      <Tab>Trailer</Tab>
+                      <Tab>More like this</Tab>
+                      <Tab>Details</Tab>
+                    </TabList>
 
-                          <Tabs>
-                            <TabList>
-                              <Tab>Episodes</Tab>
-                              <Tab>Trailer</Tab>
-                              <Tab>More like this</Tab>
-                            </TabList>
-
-                            <TabPanel>
-                                <div
-                                    className="blog-post-content"
-                                    dangerouslySetInnerHTML={{ __html: frontmatter.episodes }}
-                                />
-                            </TabPanel>
-                            <TabPanel>
-                                <div
-                    	            className="blog-post-content"
-                    	            dangerouslySetInnerHTML={{ __html: frontmatter.trailer }}
-                    	        />
-                            </TabPanel>
-                            <TabPanel>
-                              <h2>Coming soon...</h2>
-                            </TabPanel>
-                          </Tabs>
-                    </div>
+                    <TabPanel>
+                        <div
+                            dangerouslySetInnerHTML={{ __html: frontmatter.episodes }}
+                        />
+                    </TabPanel>
+                    <TabPanel>
+                        <div
+            	            dangerouslySetInnerHTML={{ __html: frontmatter.trailer }}
+            	        />
+                        {/*<Player fluid="true">
+                            <BigPlayButton position="center" />
+                            <LoadingSpinner />
+                            <ControlBar autoHide={true}>
+                              <ReplayControl seconds={10} order={2.1} />
+                              <ForwardControl seconds={10} order={3.2} />
+                              <VolumeMenuButton vertical />
+                              <PlaybackRateMenuButton rates={[5, 2, 1, 0.5, 0.1]} />
+                            </ControlBar>
+                            <source
+                              src="https://res.cloudinary.com/zakirsajib/video/upload/v1591606233/246798-146420-Coffin-Dance-on-PIANO_cwbpn6.mp4"
+                              type="video/mp4"
+                            />
+                         </Player>*/}
+                    </TabPanel>
+                    <TabPanel>
+                      <h6>Coming soon...</h6>
+                    </TabPanel>
+                    <TabPanel>
+                      <h6>Details Coming soon...</h6>
+                    </TabPanel>
+                  </Tabs>
                   }
-                {/*
-                  <Player fluid="true">
-                    <BigPlayButton position="center" />
-                    <LoadingSpinner />
-                    <ControlBar autoHide={true}>
-                      <ReplayControl seconds={10} order={2.1} />
-                      <ForwardControl seconds={10} order={3.2} />
-                      <VolumeMenuButton vertical />
-                      <PlaybackRateMenuButton rates={[5, 2, 1, 0.5, 0.1]} />
-                    </ControlBar>
-                    <source
-                      src="https://res.cloudinary.com/zakirsajib/video/upload/v1591606233/246798-146420-Coffin-Dance-on-PIANO_cwbpn6.mp4"
-                      type="video/mp4"
-                    />
-                  </Player>
-                  */}
-
-
               </div>
             </div>
         </article>
