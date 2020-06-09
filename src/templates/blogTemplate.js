@@ -69,7 +69,7 @@ export default function Template({
     	            dangerouslySetInnerHTML={{ __html: html }}
     	          />
 
-                  
+
 
                   {frontmatter.tags && frontmatter.tags.length ? (
                     <div className="taglist">
@@ -86,7 +86,7 @@ export default function Template({
 
                   {frontmatter.categories=='Movie' ? (
                     <div>
-                        <h1>Movie</h1>
+                        
                             <Tabs>
                               <TabList>
                                 <Tab>Trailer</Tab>
@@ -94,8 +94,10 @@ export default function Template({
                               </TabList>
 
                               <TabPanel>
-
-                                {frontmatter.trailer}
+                                  <div
+                      	            className="blog-post-content"
+                      	            dangerouslySetInnerHTML={{ __html: frontmatter.trailer }}
+                      	           />
                               </TabPanel>
                               <TabPanel>
                                 <h2>Coming soon...</h2>
@@ -104,7 +106,7 @@ export default function Template({
                   </div>
                   ):
                     <div>
-                        <h1>Webseries</h1>
+
                           <Tabs>
                             <TabList>
                               <Tab>Episodes</Tab>
@@ -113,10 +115,16 @@ export default function Template({
                             </TabList>
 
                             <TabPanel>
-                              {frontmatter.episodes}
+                                <div
+                                    className="blog-post-content"
+                                    dangerouslySetInnerHTML={{ __html: frontmatter.episodes }}
+                                />
                             </TabPanel>
                             <TabPanel>
-                              {frontmatter.trailer}
+                                <div
+                    	            className="blog-post-content"
+                    	            dangerouslySetInnerHTML={{ __html: frontmatter.trailer }}
+                    	        />
                             </TabPanel>
                             <TabPanel>
                               <h2>Coming soon...</h2>
