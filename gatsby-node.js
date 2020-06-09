@@ -20,6 +20,8 @@ exports.createPages = ({ actions, graphql }) => {
               path
               tags
               categories
+              trailer
+              episodes
               template
             }
           }

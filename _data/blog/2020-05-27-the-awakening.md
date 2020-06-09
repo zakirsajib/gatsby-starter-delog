@@ -7,6 +7,7 @@ thumbnail: /assets/The-Awakening-poster.jpg
 tags: ["Hollywood", "Horror"]
 categories: Movie
 trailer: <iframe width="560" height="315" frameborder="0" src="https://emp.bbc.co.uk/emp/embed/smpEmbed.html?playlist=https%3A%2F%2Fwww.bbc.co.uk%2Fcorporate2%2Fplaylist%2Fp00khl1r&title=The%20Awakening%3A%20trailer&product=iplayer"></iframe>
+episodes: NA
 ---
 A ghost-debunker comes to a boy's school to disprove the existence of ghosts, only to find her own beliefs challenged.
 

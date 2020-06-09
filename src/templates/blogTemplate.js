@@ -29,7 +29,7 @@ export default function Template({
 }) {
   const { site, markdownRemark } = data // data.markdownRemark holds your post data
   const { siteMetadata } = site
-  const { frontmatter, html } = markdownRemark
+  const { frontmatter, html, trailer} = markdownRemark
 
   return (
     <Layout>
@@ -69,6 +69,8 @@ export default function Template({
     	            dangerouslySetInnerHTML={{ __html: html }}
     	          />
 
+                  
+
                   {frontmatter.tags && frontmatter.tags.length ? (
                     <div className="taglist">
                       {frontmatter.tags.map((tag) => (
@@ -92,10 +94,11 @@ export default function Template({
                               </TabList>
 
                               <TabPanel>
-                                <h2>Any content 1</h2>
+
+                                {frontmatter.trailer}
                               </TabPanel>
                               <TabPanel>
-                                <h2>Any content 2</h2>
+                                <h2>Coming soon...</h2>
                               </TabPanel>
                             </Tabs>
                   </div>
@@ -110,13 +113,13 @@ export default function Template({
                             </TabList>
 
                             <TabPanel>
-                              <h2>Any content 1</h2>
+                              {frontmatter.episodes}
                             </TabPanel>
                             <TabPanel>
-                              <h2>Any content 2</h2>
+                              {frontmatter.trailer}
                             </TabPanel>
                             <TabPanel>
-                              <h2>Any content 3</h2>
+                              <h2>Coming soon...</h2>
                             </TabPanel>
                           </Tabs>
                     </div>
@@ -162,6 +165,8 @@ export const pageQuery = graphql`
         title
         tags
         categories
+        episodes
+        trailer
         thumbnail {
           childImageSharp {
             fluid(maxWidth: 1013) {

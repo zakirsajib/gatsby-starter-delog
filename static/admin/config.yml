@@ -78,6 +78,16 @@ collections:
         options: ["Movie", "Webseries"]
         default: ["Movie"]
 
+      - label: Trailer
+        name: trailer
+        required: false
+        widget: markdown
+
+      - label: Episodes
+        name: episodes
+        required: false
+        widget: markdown
+
       - label: Movie Poster
         name: thumbnail
         widget: image
@@ -86,5 +96,4 @@ collections:
         media_library:
           config:
             multiple: false
-      - { name: trailer, label: Trailer, widget: markdown }
       - { name: body, label: Body, widget: markdown }

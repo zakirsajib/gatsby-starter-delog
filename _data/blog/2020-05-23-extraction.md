@@ -17,6 +17,7 @@ trailer: <iframe width="560" height="315"
   src="https://www.youtube.com/embed/L6P3nI6VnlY" frameborder="0"
   allow="accelerometer; autoplay; encrypted-media; gyroscope;
   picture-in-picture" allowfullscreen></iframe>
+episodes: NA 
 ---
 **Extraction**is a 2020 American action-thriller film directed by Sam Hargrave (in his feature debut) and written by Joe Russo, based on the graphic novel Ciudad by Ande Parks, Joe Russo, Anthony Russo, Fernando León González, and Eric Skillman.
 
