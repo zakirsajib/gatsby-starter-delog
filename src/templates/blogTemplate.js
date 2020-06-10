@@ -4,7 +4,6 @@ import { kebabCase } from 'lodash'
 import { graphql, Link } from "gatsby"
 import Layout from "../components/layout"
 import Img from 'gatsby-image'
-
 import { Tab, Tabs, TabList, TabPanel } from 'react-tabs'
 import 'react-tabs/style/react-tabs.css'
 
@@ -140,6 +139,7 @@ export default function Template({
                     </TabPanel>
                     <TabPanel>
                       <h6>Coming soon...</h6>
+
                     </TabPanel>
                     <TabPanel>
                       <h6>Details Coming soon...</h6>
