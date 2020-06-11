@@ -1,9 +1,9 @@
 [![Netlify Status](https://api.netlify.com/api/v1/badges/4a01b4d8-c36b-4fdf-a941-49a86b508e5b/deploy-status)](https://app.netlify.com/sites/apz/deploys)
 
 # APZ - Ahmed | Partho | Zakir ( Our own Netflix site :smiley: :smiley: :smiley: )
-This simple website built with GatsbyJS and Netlify CMS. Deploys on netlify with single click. 
+This simple website built with GatsbyJS and Netlify CMS. Deploys on netlify with single click.
 
-[![APZ - Ahmed | Partho | Zakir](https://github.com/zakirsajib/gatsby-starter-delog/blob/master/assets/apz.jpg)](https://apz.netlify.app/)
+[![APZ - Ahmed | Partho | Zakir](https://github.com/zakirsajib/gatsby-starter-delog/blob/master/assets/Screenshot_APZ.png)](https://apz.netlify.app/)
 
 [![APZ - Workflow](https://github.com/zakirsajib/gatsby-starter-delog/blob/master/assets/workflow.jpg)](https://apz.netlify.app/)
 
@@ -23,7 +23,7 @@ gatsby new gatsby-starter-delog https://github.com/zakirsajib/gatsby-starter-del
 ## Features
 - Built with GatsbyJS and Netlify CMS
 - Option to Add, Edit, Update and Delete posts via Netlify CMS
-- SEO friendly - Option to Add meta description 
+- SEO friendly - Option to Add meta description
 - Comes with dark mode
 
 ---
@@ -40,7 +40,7 @@ You need to change repo URL to your own `repo` at `/static/admin/config.yml`, fo
 
 ### Creating Github OAuth Client ID
 * Goto Github [Developer Settings](https://github.com/settings/developers)
-* **New OAuth** 
+* **New OAuth**
 * Enter Application name
 * Homepage URL as Netlify URL
 * And **Authorization callback URL** to `https://api.netlify.com/auth/done`)
@@ -48,7 +48,7 @@ You need to change repo URL to your own `repo` at `/static/admin/config.yml`, fo
 
 ### Accessing Netlify CMS Admin
 * Goto your Netlify site admin
-* Goto **Access Control** > **OAuth** then **Install Provider** you need to select provider as `Github` as add `Client ID` and `Secret` 
+* Goto **Access Control** > **OAuth** then **Install Provider** you need to select provider as `Github` as add `Client ID` and `Secret`
 * Your Netlify CMS is ready. Goto you netlify site URL and append `/admin/`. for example `example.netlify.com/admin/`, You will see login with Github button.
 
 ### Managing Blog Posts in Netlify CMS
@@ -109,11 +109,11 @@ All notable changes to this project are listed here.
 - `gatsby-plugin-manifest` configures GatsbyJS to create a manifest.webmanifest file on every site build
 
 ### [1.2.0] - 2020-04-28
-#### Added 
+#### Added
 - GatsbyJS Increment builds with Netlify deployment
 
 ### [1.1.0] - 2020-04-21
-#### Added 
+#### Added
 - Dark mode compatibitly and toggle for user preference
 
 ### [1.0.0] - 2020-03-14
