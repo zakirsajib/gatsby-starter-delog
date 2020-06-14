@@ -14,4 +14,4 @@ thumbnail: /assets/braveheart_xlg.jpg
 ---
 Watch from [here](http://srv2.cinehub24.com/02%2F131358-76821-Braveheart-1995.720p.BrRip.x264.YIFY.mp4):
 
-or Download from here:
+or Download from [here](https://we.tl/t-ZWGh1m2GdC):
