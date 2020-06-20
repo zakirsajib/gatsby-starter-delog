@@ -25,7 +25,7 @@ export default ({ children }) => {
       </header>
       {children}
       <footer className="site-footer">
-        <p>&copy; {new Date().getFullYear()} APZ | Made with <span role="img" aria-label="love">❤️</span> by <a href="https://zsresume.netlify.app" target="_blank" rel="noreferrer">Zakir</a></p>
+        <p>&copy; {new Date().getFullYear()} 🍿 APZ 🍿 | Made with <span role="img" aria-label="love">❤️</span> by <a href="https://zsresume.netlify.app" target="_blank" rel="noreferrer">Zakir</a></p>
         {/* <Link to="/request">Request Movie</Link> */}
       </footer>
     </div>

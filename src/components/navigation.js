@@ -85,7 +85,7 @@ class Navbar extends React.Component {
                 xmlns="http://www.w3.org/2000/svg"
                 aria-hidden="true"
                 focusable="false"
-                class="icon-hamburger masthead-nav-menu-hamburger"
+                className="icon-hamburger masthead-nav-menu-hamburger"
               >
                 <rect
                   x="0.581177"
@@ -124,7 +124,7 @@ class Navbar extends React.Component {
                     xmlns="http://www.w3.org/2000/svg"
                     aria-hidden="true"
                     focusable="false"
-                    class="icon-hamburger masthead-nav-menu-hamburger"
+                    className="icon-hamburger masthead-nav-menu-hamburger"
                   >
                     <rect
                       x="0.581177"

@@ -12,3 +12,9 @@ export const onServiceWorkerUpdateReady = () => {
       window.location.reload()
     }
   }
+
+export const onInitialClientRender = () => {
+    setTimeout(function() {
+      document.getElementById("___loader").style.display = "none"
+  }, 500)
+}

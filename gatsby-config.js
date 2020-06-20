@@ -65,7 +65,7 @@ module.exports = {
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
-        name: `Netflix | Ahmed Partho Zakir `,
+        name: `🍿 🍿 🍿 | Ahmed Partho Zakir 🍿`,
         short_name: `APZNetlix`,
         start_url: `/`,
         background_color: `#fff`,
